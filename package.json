@@ -1,6 +1,6 @@
 {
   "name": "performance-meter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Measure performance of you functions ",
   "main": "lib/index.js",
   "scripts": {
