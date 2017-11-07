@@ -2,9 +2,11 @@
   "name": "performance-meter",
   "version": "1.0.0",
   "description": "Measure performance of you functions ",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib",
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
@@ -13,10 +15,7 @@
   "keywords": [
     "performance",
     "measure",
-    "performance",
     "testing",
-    "performance",
-    "test",
     "test"
   ],
   "author": "kurumkan <joomrise@gmail.com>",
@@ -24,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/kurumkan/performance-meter/issues"
   },
-  "homepage": "https://github.com/kurumkan/performance-meter#readme"
+  "homepage": "https://github.com/kurumkan/performance-meter#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1"
+  }
 }
